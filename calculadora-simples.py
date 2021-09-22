@@ -49,84 +49,50 @@ def abertura():
     print()
     b = int(input("Digite o segundo número: "))
     print("-----------------------------------------------------")
+    seletor(escolha,a,b)
+    print("-----------------------------------------------------")
+    reboot = input('Deseja calcular novamente? [s/n]: ')
+    print("-----------------------------------------------------")
+    if reboot == "s":
+        abertura()
+    else:
+        print('Até a próxima!')
     
-
+def seletor(escolha,a,b):
     if escolha == "+":
         SOMA = soma(a,b)
         print("A soma dos números é = {}".format(SOMA))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 
     if escolha == "-":
         SUB = sub(a,b)
         print("A subtração dos números é = {}".format(SUB))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 
     if escolha == "*":
         MULT = mult(a,b)
         print("A multiplicação dos números é = {}".format(MULT))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 
     if escolha == "/":
         DIVS = divs(a,b)
         print("A divisão dos números é = {}".format(DIVS))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
         
     if escolha == "//":
         DIVINT = divint(a,b)
         print("A divisão inteira dos números é = {}".format(DIVINT))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 
     if escolha == "A-":
         UNAR = unar(a,b)
         print("A negativação do número primeiro número é = {}".format(UNAR))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 
     if escolha == "**":
         POTENC = potenc(a,b)
         print("A potenciação é = {}".format(POTENC))
-        print("-----------------------------------------------------")
-        reboot = input('Deseja calcular novamente? [s/n]: ')
-        print("-----------------------------------------------------")
-        if reboot == "s":
-            abertura()
-        else:
-            print('Até a próxima!')
+        return
 abertura()
 
 
